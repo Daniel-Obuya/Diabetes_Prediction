@@ -1,6 +1,9 @@
 import streamlit as st
 import numpy as np
 import pickle
+from sklearn import svm
+from sklearn.preprocessing import StandardScaler
+
 
 # Load the saved model and scaler
 loaded_model = pickle.load(open('trained_model.sav', 'rb'))
